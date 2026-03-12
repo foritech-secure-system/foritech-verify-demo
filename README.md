@@ -243,3 +243,9 @@ python demo/verify_demo.py
 ```
 pytest tests
 ```
+
+## License
+
+This repository contains a **demonstration implementation** of the verification concept.
+
+Core production components of the Foritech Secure System are not included in this repository.
