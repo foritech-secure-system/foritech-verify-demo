@@ -6,7 +6,7 @@
 ![Security](https://img.shields.io/badge/telemetry-integrity-critical)
 ![License](https://img.shields.io/badge/license-research-lightgrey)
 ![Tests](https://github.com/foritech-secure-system/foritech-verify-demo/actions/workflows/tests.yml/badge.svg)
-
+[![Sponsor](https://img.shields.io/badge/Sponsor-Support%20Project-orange)](#support-the-project)
 
 Cryptographic verification for machine telemetry and industrial data pipelines.
 
@@ -245,6 +245,46 @@ python demo/verify_demo.py
 ```
 pytest tests
 ```
+
+---
+
+# Support the Project
+
+Foritech Secure System is an independent research effort focused on improving telemetry integrity and security for industrial and IoT systems.
+
+If you find this project useful, consider supporting its development.
+
+## Ways to Support
+
+- ⭐ Star the repository
+- 🛠 Contribute improvements
+- 💬 Share feedback
+- ☕ Support development
+
+## Donate
+
+You can support the development of this project via:
+
+- Bitcoin
+- Ethereum
+- GitHub Sponsors (planned)
+
+Example donation address:
+
+BTC  
+`bc1qske5uamdpgl2mvqvwdlpw0ujdzzycv5epdhrtk`
+
+ETH  
+`0xb9E13386b295D7a1663e63Cb919b342168e7C64B`
+
+---
+
+## Sponsorship
+
+Organizations interested in collaboration, integration, or security research partnerships can contact:
+
+security@forisec.eu
+
 
 ## License
 
