@@ -1,0 +1,8 @@
+{
+  "device_id": "iot2050-demo",
+  "timestamp": 1700000000,
+  "telemetry": {
+    "energy": 12.4,
+    "voltage": 230.1
+  }
+}
