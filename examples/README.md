@@ -16,3 +16,14 @@ Example signed telemetry message:
 
 ```
 Full example available in `examples/telemetry_example.json`.
+
+
+## Example telemetry messages
+
+Example telemetry containers are available in the `examples` directory.
+
+- `telemetry_valid.json` — normal device telemetry
+- `telemetry_tampered.json` — modified payload example
+- `telemetry_replay.json` — replay attack example
+
+These examples illustrate typical telemetry integrity risks in industrial and IoT environments.

@@ -1,0 +1,14 @@
+{
+  "device_id": "iot2050-demo",
+  "timestamp": 1700000000,
+  "telemetry": {
+    "energy": 9999,
+    "voltage": 230.1,
+    "power": 2.1,
+    "frequency": 50.0
+  },
+  "meta": {
+    "gateway": "foritech-edge",
+    "site": "demo-factory"
+  }
+}
