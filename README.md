@@ -7,6 +7,7 @@
 ![License](https://img.shields.io/badge/license-research-lightgrey)
 ![Tests](https://github.com/foritech-secure-system/foritech-verify-demo/actions/workflows/tests.yml/badge.svg)
 [![Sponsor](https://img.shields.io/badge/Sponsor-Support%20Project-orange)](#support-the-project)
+[![Sponsor](https://img.shields.io/badge/Sponsor-GitHub%20Sponsors-pink)](https://github.com/sponsors/forrybg)
 
 Cryptographic verification for machine telemetry and industrial data pipelines.
 
@@ -267,7 +268,12 @@ You can support the development of this project via:
 
 - Bitcoin
 - Ethereum
-- GitHub Sponsors (planned)
+
+## Sponsor the Project
+
+You can support development via GitHub Sponsors.
+
+❤️ Sponsor on GitHub
 
 Example donation address:
 
