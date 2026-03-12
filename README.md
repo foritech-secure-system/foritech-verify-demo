@@ -1,5 +1,15 @@
 # Foritech Verify Demo
 
+![Python](https://img.shields.io/badge/python-3.10%2B-blue)
+![Tests](https://img.shields.io/badge/tests-passing-brightgreen)
+![Fuzz Tested](https://img.shields.io/badge/fuzz%20tested-AFL%2B%2B-orange)
+![Security](https://img.shields.io/badge/telemetry-integrity-critical)
+![License](https://img.shields.io/badge/license-research-lightgrey)
+
+Cryptographic verification for machine telemetry and industrial data pipelines.
+
+# Foritech Verify Demo
+
 **Cryptographic verification for machine telemetry and industrial data pipelines.**
 
 This repository demonstrates a simplified concept of the **Foritech Secure System** verification layer.
@@ -52,6 +62,86 @@ demo/ # simplified signing and verification examples
 docs/ # architecture overview
 tests/ # tampering detection tests
 
+
+---
+
+## Architecture overview
+
+Typical telemetry pipeline today:
+
+Device → MQTT/HTTP → Database → Dashboard
+
+Trusted by default.
+
+Foritech approach:
+
+```bash
+Device / Sensor
+      │
+      ▼
+Foritech Edge (sign telemetry)
+      │
+      ▼
+Transport (MQTT / HTTP / files)
+      │
+      ▼
+Foritech Verify (validate signature)
+      │
+      ▼
+Database / Analytics / Control systems
+
+```
+
+Only authenticated telemetry is accepted.
+
+---
+
+## Security validation
+
+The full Foritech Secure System includes multiple validation layers:
+
+- Unit testing
+- Tamper detection tests
+- Boundary condition tests
+- Negative cryptographic tests
+- AFL++ fuzz testing
+
+These techniques help detect malformed containers and corrupted telemetry inputs before they reach analytics systems.
+
+---
+
+## Example attack scenario
+
+Without integrity verification:
+
+Attacker → injects modified telemetry → database accepts data → dashboard shows false values.
+
+With Foritech verification:
+
+Attacker → modifies telemetry → signature mismatch → verification fails → data rejected.
+
+Result: corrupted telemetry never enters the system.
+
+---
+
+## Industrial use cases
+
+Designed for environments such as:
+
+- Industrial automation
+- Energy infrastructure
+- Remote machinery and robotics
+- Telemetry-driven AI systems
+
+---
+
+## Status
+
+Concept demonstration / verification prototype.
+
+Part of the broader **Foritech Secure System** architecture.
+
+Looking for pilot deployments and technical feedback.
 
 ---
 
@@ -116,3 +206,40 @@ Author
 Foritech Secure System
 
 Industrial telemetry integrity research.
+
+
+
+
+## Setup
+
+Clone repository
+
+
+git clone https://github.com/foritech-secure-system/foritech-verify-demo.git
+
+```bash
+cd foritech-verify-demo
+```
+
+Create virtual environment
+
+```
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+Install dependencies
+
+```
+pip install -r requirements.txt
+```
+
+Run demo
+
+```
+python demo/sign_demo.py
+python demo/verify_demo.py
+```
+```
+pytest tests
+```
