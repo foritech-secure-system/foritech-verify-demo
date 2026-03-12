@@ -5,6 +5,8 @@
 ![Fuzz Tested](https://img.shields.io/badge/fuzz%20tested-AFL%2B%2B-orange)
 ![Security](https://img.shields.io/badge/telemetry-integrity-critical)
 ![License](https://img.shields.io/badge/license-research-lightgrey)
+![Tests](https://github.com/foritech-secure-system/foritech-verify-demo/actions/workflows/tests.yml/badge.svg)
+
 
 Cryptographic verification for machine telemetry and industrial data pipelines.
 

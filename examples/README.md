@@ -4,7 +4,7 @@ Example signed telemetry message:
 
 ```bash
 {
-  "device_id": "iot2050-demo",
+  "device_id": "6acd1ccb24c44a5ea287620e80a5c237",
   "timestamp": 1700000000,
   "telemetry": {
     "energy": 12.4,
@@ -13,7 +13,6 @@ Example signed telemetry message:
     "frequency": 50.0
   }
 }
-
 ```
 Full example available in `examples/telemetry_example.json`.
 
@@ -27,3 +26,6 @@ Example telemetry containers are available in the `examples` directory.
 - `telemetry_replay.json` — replay attack example
 
 These examples illustrate typical telemetry integrity risks in industrial and IoT environments.
+
+Demo uses SHA256 for simplicity.
+Production system uses cryptographic signatures.
