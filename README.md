@@ -273,7 +273,7 @@ You can support the development of this project via:
 
 You can support development via GitHub Sponsors.
 
-❤️ Sponsor on GitHub
+❤️ https://github.com/sponsors/forrybg 
 
 Example donation address:
 
