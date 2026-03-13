@@ -210,8 +210,19 @@ Foritech Secure System
 
 Industrial telemetry integrity research.
 
+---
 
+## Security Research
 
+This repository demonstrates research concepts used in the
+Foritech Secure System including:
+
+• telemetry integrity verification
+• replay attack protection
+• tamper detection
+• fuzz tested telemetry parsing
+
+---
 
 ## Setup
 
