@@ -1,0 +1,23 @@
+name: Foritech Security Dashboard
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  security-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.12
+
+      - name: Install deps
+        run: pip install pytest
+
+      - name: Run security scoreboard
+        run: python3 scripts/security_score.py

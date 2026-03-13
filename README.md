@@ -6,8 +6,11 @@
 ![Security](https://img.shields.io/badge/telemetry-integrity-critical)
 ![License](https://img.shields.io/badge/license-research-lightgrey)
 ![Tests](https://github.com/foritech-secure-system/foritech-verify-demo/actions/workflows/tests.yml/badge.svg)
-[![Sponsor](https://img.shields.io/badge/Sponsor-Support%20Project-orange)](#support-the-project)
 [![Sponsor](https://img.shields.io/badge/Sponsor-GitHub%20Sponsors-pink)](https://github.com/sponsors/forrybg)
+![Tests](https://img.shields.io/badge/tests-PASS-green)
+![Fuzzing](https://img.shields.io/badge/fuzzing-AFL++-orange)
+![Security Score](https://img.shields.io/badge/security_score-97-blue)
+
 
 Cryptographic verification for machine telemetry and industrial data pipelines.
 
@@ -20,6 +23,12 @@ This repository demonstrates a simplified concept of the **Foritech Secure Syste
 The goal is to ensure that telemetry data received from devices or gateways has not been **spoofed, modified, or silently manipulated** before entering analytics, storage or control systems.
 
 ---
+
+## Project Website
+
+🌐 https://forisec.eu/
+
+The Foritech Secure System research and development project.
 
 ## Problem
 
